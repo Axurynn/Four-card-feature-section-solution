@@ -1,0 +1,114 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --poppins: "poppins", sans-serif;
+}
+body {
+  background-color: var(--very-light-gray);
+  font-family: var(--poppins);
+  font-size: 15px;
+  font-weight: 200;
+  color: var(--grayish-blue);
+  text-align: center;
+  line-height: normal;
+}
+
+.container {
+  margin: 3rem 2rem;
+}
+
+h1 {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+  font-size: 24px;
+}
+
+h2 {
+  color: var(--very-dark-blue);
+  font-size: 23px;
+}
+
+.topPageP {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.cards {
+  margin-top: 0.5rem;
+}
+
+.cardSupervisor,
+.cardTeamBuilder,
+.cardKarma,
+.cardCalculator {
+  box-shadow: 0px 4px 10px 1px var(--grayish-blue);
+  border-radius: 0.4rem;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.cardSupervisor {
+  border-top: 0.3rem solid var(--cyan);
+}
+.cardTeamBuilder {
+  border-top: 0.3rem solid var(--red);
+}
+.cardKarma {
+  border-top: 0.3rem solid var(--orange);
+}
+.cardCalculator {
+  border-top: 0.3rem solid var(--blue);
+}
+
+.cardTitle {
+  color: var(--very-dark-blue);
+  font-size: 20px;
+  font-weight: 600;
+}
+.cardP {
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
+.img {
+  width: 100%;
+  text-align: right;
+  margin-top: 3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+  .topPageP {
+    padding: 0 29rem;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+  }
+  .cardSupervisor,
+  .cardTeamBuilder,
+  .cardKarma,
+  .cardCalculator {
+    margin: 1rem 1rem;
+    width: 300px;
+  }
+}
