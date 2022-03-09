@@ -61,6 +61,14 @@ h2 {
   max-width: 330px;
 }
 
+.cardSupervisor:hover,
+.cardTeamBuilder:hover,
+.cardKarma:hover,
+.cardCalculator:hover {
+  background-color: hsl(0, 0%, 94%);
+  color: var(--very-dark-blue);
+}
+
 .cardSupervisor {
   border-top: 0.3rem solid var(--cyan);
 }
