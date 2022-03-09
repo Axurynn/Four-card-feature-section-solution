@@ -6,7 +6,7 @@
   --very-dark-blue: hsl(234, 12%, 34%);
   --grayish-blue: hsl(229, 6%, 66%);
   --very-light-gray: hsl(0, 0%, 98%);
-  --poppins: "poppins", sans-serif;
+  --poppins: 'Poppins', sans-serif;
 }
 body {
   background-color: var(--very-light-gray);
@@ -16,30 +16,37 @@ body {
   color: var(--grayish-blue);
   text-align: center;
   line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
-  margin: 3rem 2rem;
+  margin: 5em 2em;
 }
 
 h1 {
   font-weight: 600;
   color: var(--very-dark-blue);
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h2 {
   color: var(--very-dark-blue);
   font-size: 23px;
+  font-weight: 200;
 }
 
-.topPageP {
+.header-content {
   margin-top: 1rem;
   margin-bottom: 5rem;
 }
 
 .cards {
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cardSupervisor,
@@ -51,6 +58,7 @@ h2 {
   margin: 1rem 0;
   padding: 1.5rem;
   text-align: left;
+  max-width: 330px;
 }
 
 .cardSupervisor {
@@ -90,8 +98,10 @@ h2 {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1440px) {
-  h1,
+@media (min-width: 1200px) {
+  h1{
+    font-size: 32px;
+  }
   h2 {
     font-size: 30px;
   }
@@ -99,16 +109,14 @@ h2 {
     padding: 0 29rem;
   }
   .cards {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    margin: 5rem;
+    gap: 1em;
   }
   .cardSupervisor,
   .cardTeamBuilder,
   .cardKarma,
   .cardCalculator {
     margin: 1rem 1rem;
-    width: 300px;
   }
 }
